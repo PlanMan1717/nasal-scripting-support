@@ -1,0 +1,25 @@
+{
+    "name": "nasal-scripting-support",
+    "displayName": "NASAL Scripting Support",
+    "description": "Support for the NASAL language specifically for the development of FlightGear",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.49.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "nas",
+            "aliases": ["NASAL", "nas"],
+            "extensions": [".nas"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "nas",
+            "scopeName": "source.nas",
+            "path": "./syntaxes/nas.tmLanguage.json"
+        }]
+    }
+}
